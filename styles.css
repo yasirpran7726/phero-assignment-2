@@ -1,0 +1,145 @@
+/* Common CSS */
+
+*{
+    box-sizing: border-box;
+    max-width: 1440px;
+    background-color: #F5F8FF;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.black{
+    color: rgb(0, 0, 0);
+}
+.lightblack{
+    color: rgb(137, 135, 161)
+}
+.orange{
+    color: rgb(233, 90, 8);
+}
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.tfont{
+    font-size: 3rem;
+}
+.sfont{
+    font-size: 1.5rem;
+}
+/*  */
+
+
+
+
+/* Nav */
+
+.nav{
+    justify-content: space-between;
+}
+.nav-part{
+    margin-top: 40px;
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+}
+.nav-list{
+    gap: 35px;
+    font-weight: 600;
+}
+.cart{
+    font-weight: normal;
+    margin-left: 25px;
+}
+/*  */
+
+
+
+/* Banner */
+.banner{
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.banner-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.banner-left{
+    padding-left: 40px;
+}
+.banner p{
+    font-size: 1.5rem;
+}
+.banner img{
+    width: 570px;
+    height: 355px;
+}
+/*  */
+
+
+
+/* Our Plants */
+.our-plants{
+    text-align: center;
+    margin-top: 9rem;
+}
+/*  */
+
+
+/* grid part */
+
+.plant-display{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.plant-card{
+    width: 16.8rem;
+    text-align: center;
+}
+.plant-card button{
+    width: 16.8rem;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: rgb(233, 90, 8);
+    border: none;
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Responsive part */
+@media screen and (max-width:576px) {
+
+    /* nav */
+    .nav{
+        width: auto;
+        height: auto;
+    }
+    .hidden{
+        display: none;
+    }
+
+}
