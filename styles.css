@@ -112,6 +112,7 @@ header a{
 .plant-display{
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
+    margin-top: 2rem;
 }
 .plant-card{
     width: 16.8rem;
@@ -125,6 +126,35 @@ header a{
     border: none;
     font-size: 1rem;
 }
+/*  */
+
+
+
+
+/* plant lover section */
+.plant-lover-section{
+    position: relative;
+    margin-top: 14rem;
+}
+.plant-lover-section > div{
+    flex: 1;
+}
+.lover-right{
+    padding-left: 2rem;
+}
+.plant-lover-section li{
+    margin-bottom: 1rem;
+}
+.plant-lover-section .badge{
+    background-color: transparent;
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    top: -120px;
+    left: 350px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
 
 
 
