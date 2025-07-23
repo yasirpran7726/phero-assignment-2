@@ -205,6 +205,28 @@ header a{
 /*  */
 
 
+/* footer */
+.footer{
+    height: 350px;
+    margin-top: 50px
+}
+.footer-one, .footer-two, .footer-three{
+    flex: 1;
+}
+.footer-two, .footer-three{
+    text-align: center;
+}
+.footer-two{
+    grid-template-columns: repeat(2,1fr);
+}
+.footer-three{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.footer-three img{
+    margin-right: 1.5rem;
+}
+
 
 
 
