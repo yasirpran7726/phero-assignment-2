@@ -51,6 +51,11 @@
 
 
 
+
+
+
+
+
 /* Nav */
 
 .nav{
@@ -77,11 +82,16 @@ header a{
 
 
 
+
+
+
+
+
 /* Banner */
 .banner{
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 16rem;
 }
 .banner-title{
     font-size: 2rem;
@@ -98,6 +108,11 @@ header a{
     height: 355px;
 }
 /*  */
+
+
+
+
+
 
 
 
@@ -133,6 +148,11 @@ header a{
 
 
 
+
+
+
+
+
 /* plant lover section */
 .plant-lover-section{
     position: relative;
@@ -159,16 +179,68 @@ header a{
 /*  */
 
 
+
+
+
+
+
 /* Challenge part */
-.bloom{
-    background-image: url(./assets/deal-bloom.png);
+
+
+.deals-section {
+    max-width: 1140px;
+    margin: 100px auto;
+    display: flex;
+    gap: 20px;
 }
-.ana{
-    background-image: url(./assets/deal-ana.png);
+.deal {
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(30%);
+    background-blend-mode: darken;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    flex: 1;
+
 }
-.zabo{
-    background-image: url(./assets/deal-zabo.png);
+.left-flex{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
 }
+.deal-large {
+    height: 400px;
+    width: 70%;
+}
+.deal-overlay {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+.deals-section p{
+    background-color: transparent;
+    font-weight: bold;
+}
+.deal a {
+    color: white;
+    text-decoration: underline;
+    background-color: transparent;
+}
+/*  */
+
+
+
+
+
+
 
 
 
@@ -205,6 +277,11 @@ header a{
 /*  */
 
 
+
+
+
+
+
 /* footer */
 .footer{
     height: 350px;
@@ -226,6 +303,13 @@ header a{
 .footer-three img{
     margin-right: 1.5rem;
 }
+footer a{
+    text-decoration: none;
+    color: rgb(107, 114, 128);
+}
+
+/*  */
+
 
 
 
