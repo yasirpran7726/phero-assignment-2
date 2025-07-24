@@ -322,125 +322,154 @@ footer a{
 
 
 
+
+
+
 /* Responsive part */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+    
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    /* nav */
+
+    .hidden, .badge{
+        display: none;
+    }
+    .nav{
+        padding: 0 1rem;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5rem;
+        width: auto;
+    }
+    .cart{
+        font-size: 1rem;
+    }
 
 
-  .hidden{
-    display: none;
-  }
-  .nav {
-    align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-  }
-  .cart{
-    font-size: 1.5rem;
-  }
-  .nav-part {
-    margin-top: 0;
-  }
+    /* banner */
 
-  .banner {
-    flex-direction: column-reverse;
-    margin-top: 1.75rem;
-    text-align: left;
-    margin-bottom: 4rem;
-  }
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+    .banner-left{
+        margin: auto;
+        margin-bottom: 4rem;
+        width: calc(100% - 1rem);
+        margin-right: 0.5rem;
+    }
+    .banner-left h1{
+        padding: 2rem 0;
+        font-size: 1.5rem;
+    }
+    .banner-right{
+        width: 36rem;
+    }
 
-  .banner-left {
-    padding: 0 1rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-  }
+    /* grid layout */
+    
+    .plant-display{
+        width: calc(100% - 1rem);
+        grid-template-columns: repeat(2,1fr);
+    }
 
-  .banner h1{
-    margin-bottom: 1rem;
-  }
+    /* plant lover */
 
-  .banner img {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-  }
+    .plant-lover-section{
+        flex-direction: column;
+    }
+    .lover-left{
+        width: calc(100% - 1rem);
+        margin-left: 0.5rem;
+    }
+    .lover-right p li{
+        margin-bottom: 2rem;
+    }
+    .lover-right{
+        margin-bottom: 9rem;
+    }
 
-  .our-plants h1{
-    margin: 1rem;
-  }
-  .our-plants p{
-    margin: 1.75rem 1rem;
-  }
 
-  .plant-display {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
+    /* deals section */
 
-  .plant-card {
-    width: 90%;
-  }
+    .deals-section{
+        flex-direction: column;
+    }
+    .deal{
+        width: 100%;
+        height: auto;
+    }
+    .left-flex{
+        width: calc(100% - 1rem);
+        height: 30rem;
+        margin-left: 0.5rem;
+    }
+    .deal-large{
+        width: calc(100% - 1rem);
+        margin-left: 0.5rem;
+    }
 
-  .plant-card button {
-    width: 100%;
-  }
 
-  .plant-lover-section {
-    flex-direction: column;
-    gap: 2rem;
-  }
+    /* join us section */
 
-  .lover-right {
-    padding: 0 1rem;
-  }
+    .join-us{
+        background-size: cover;
+        background-position: center;
+        height: 17rem;
+    }
+    .join-us h1{
+        font-size: 1.25rem;
+    }
+    .join-us input{
+        width: 13.625rem;
+        height: 3.125rem;
+    }
+    .join-us button{
+        width: 6.4375rem;
+        height: 3.125rem;
+    }
 
-  .plant-lover-section .badge {
-    position: static;
-    width: 180px;
-    height: auto;
-    margin: 0 auto;
-  }
 
-  .deals-section {
-    flex-direction: column;
-  }
+    /* footer */
 
-  .left-flex {
-    width: 100%;
-  }
-
-  .deal-large {
-    width: 100%;
-    height: 15rem;
-  }
-
-  .join-us {
-    padding: 2rem;
-    text-align: center;
-    height: auto;
-  }
-
-  .join-us input {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .join-us button {
-    width: 100%;
-  }
-
-  .footer {
+   .footer {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
     height: auto;
     padding: 2rem 1rem;
   }
+  .footer-one figure{
+    width: 11.25rem;
 
+  }
   .footer-two {
     grid-template-columns: 1fr;
+    line-height: 3rem;
   }
 
   .footer-three {
     justify-content: center;
+    width: 13.5rem;
   }
+  .footer-one, .footer-two, .footer-three{
+    text-align: start;
+  }
+  .footer-three{
+    gap: 2rem;
+  }
+  /*  */
 }
+
