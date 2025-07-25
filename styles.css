@@ -88,6 +88,7 @@ header a{
 
 
 /* Banner */
+
 .banner{
     justify-content: center;
     align-items: center;
@@ -149,6 +150,9 @@ header a{
     border: none;
     font-size: 1rem;
 }
+.plant-card button:hover{
+    background-color: orange;
+}
 /*  */
 
 
@@ -157,9 +161,8 @@ header a{
 
 
 
-
-
 /* plant lover section */
+
 .plant-lover-section{
     position: relative;
     margin-top: 14rem;
@@ -286,6 +289,9 @@ header a{
     font-weight: bold;
     border: none;
 }
+.join-us button:hover{
+    background-color: orange;
+}
 /*  */
 
 
@@ -298,6 +304,9 @@ header a{
 .footer{
     height: 22rem;
     margin-top: 3.125rem;
+}
+.footer-one img{
+    width: 8.45rem;
 }
 .footer-one, .footer-two, .footer-three{
     flex: 1;
@@ -341,7 +350,6 @@ footer a{
         padding: 0;
         overflow-x: hidden;
     }
-    
     img{
         width: calc(100% - 1rem);
         height: auto;
@@ -358,12 +366,20 @@ footer a{
         justify-content: space-between;
         width: auto;
     }
+    #nav-li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .nav img{
         width: 6rem;
         height: auto;
     }
     .cart{
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    .nav ul li i{
+        font-size: 1.5rem;
     }
 
 
@@ -378,10 +394,14 @@ footer a{
         margin-bottom: 4rem;
         width: calc(100% - 1rem);
         margin-right: 0.5rem;
+        padding-left: 1rem;
     }
     .banner-left h1, .our-plants h1, .plant-lover-section h1{
         padding: 2rem 0;
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .banner-left p, .our-plants p, .li-font{
+        font-size: large;
     }
     .banner-right{
         width: 36rem;
@@ -392,6 +412,13 @@ footer a{
     .plant-display{
         width: calc(100% - 1rem);
         grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        max-width: 36rem;
+        box-sizing: border-box;
+        margin: 3rem auto;
+    }
+    .plant-card button{
+        width: 16rem;
     }
 
     /* plant lover */
@@ -399,7 +426,7 @@ footer a{
     .plant-lover-section{
         flex-direction: column;
     }
-    .lover-left{
+    .lover-left img{
         width: calc(100% - 1rem);
         margin-left: 0.5rem;
     }
@@ -407,7 +434,7 @@ footer a{
         margin-bottom: 2rem;
     }
     .lover-right{
-        margin-bottom: 9rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -447,9 +474,10 @@ footer a{
     }
     .join-us h1{
         font-size: 1.25rem;
+        margin-bottom: 1.5rem;
     }
     .join-us input{
-        width: 13.625rem;
+        width: 17rem;
         height: 3.125rem;
     }
     .join-us button{
@@ -467,8 +495,9 @@ footer a{
         height: auto;
         padding: 2rem 1rem;
    }
-   .footer-one figure{
+   .footer-one img{
         width: 11.25rem;
+        margin-bottom: 1.5rem;
    }
    .footer-two {
         grid-template-columns: repeat(1,1fr);
@@ -476,31 +505,36 @@ footer a{
    }
   
    .footer-three {
-        justify-content: center;
-        width: 13.5rem;
+        justify-content: flex-start;
+        margin-left: 0;
+        gap: 2rem;
    }
    .footer-one, .footer-two, .footer-three{
         text-align: start;
    }
-   .footer-three{
-        gap: 2rem;
-   }
+
 }
   /*  */
 
-
-@media screen and (max-width: 460px) {
-    .nav{
-        padding: 4rem;
-        align-items: center;
-        gap: 5rem;
-        width: auto;
-    }
-    .nav figure{
-        width: 0rem;
-    }
-    .plant-display{
-        grid-template-columns: repeat(1,1fr);
+  /* grid for iphone 14 pro max */
+    @media screen and (max-width: 460px) {
+        .plant-display{
+            grid-template-columns: 13rem 13rem;
+            gap: 1rem;
+            max-width: calc( 100% - 1rem)
+        }
+        .plant-card h3{
+            padding-top: 1rem;
+        }
+        .plant-card h2{
+            padding-bottom: 1rem;
+        }
+        .plant-card button{
+            padding: 1rem;
+            margin: 0;
+            width: 13rem
+        }
+        .nav ul li i{
+        font-size: 1rem;
     }
 }
-
