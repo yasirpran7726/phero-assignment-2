@@ -240,6 +240,12 @@ header a{
     text-decoration: underline;
     background-color: transparent;
 }
+#responsive-p{
+    font-size: 3rem;
+}
+#responsive-a{
+    font-size: 2rem;
+}
 /*  */
 
 
@@ -337,7 +343,7 @@ footer a{
     }
     
     img{
-        width: 100%;
+        width: calc(100% - 1rem);
         height: auto;
     }
     
@@ -347,11 +353,14 @@ footer a{
         display: none;
     }
     .nav{
-        padding: 0 1rem;
+        padding: 0 2rem;
         align-items: center;
-        justify-content: flex-start;
-        gap: 5rem;
+        justify-content: space-between;
         width: auto;
+    }
+    .nav img{
+        width: 6rem;
+        height: auto;
     }
     .cart{
         font-size: 1rem;
@@ -370,9 +379,9 @@ footer a{
         width: calc(100% - 1rem);
         margin-right: 0.5rem;
     }
-    .banner-left h1{
+    .banner-left h1, .our-plants h1, .plant-lover-section h1{
         padding: 2rem 0;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .banner-right{
         width: 36rem;
@@ -419,6 +428,13 @@ footer a{
     .deal-large{
         width: calc(100% - 1rem);
         margin-left: 0.5rem;
+        padding: 4.5rem 1.5rem;
+    }
+    #responsive-a{
+        font-size: 1rem;
+    }
+    #responsive-p{
+        font-size: 1.5rem;
     }
 
 
@@ -451,13 +467,11 @@ footer a{
         height: auto;
         padding: 2rem 1rem;
    }
-   }
    .footer-one figure{
         width: 11.25rem;
-  
    }
    .footer-two {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
         line-height: 3rem;
    }
   
@@ -471,6 +485,7 @@ footer a{
    .footer-three{
         gap: 2rem;
    }
+}
   /*  */
 
 
@@ -478,7 +493,6 @@ footer a{
     .nav{
         padding: 4rem;
         align-items: center;
-        justify-content: flex-start;
         gap: 5rem;
         width: auto;
     }
@@ -486,7 +500,6 @@ footer a{
         width: 0rem;
     }
     .plant-display{
-        /* width: calc(100% - 1rem); */
         grid-template-columns: repeat(1,1fr);
     }
 }
