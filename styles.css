@@ -184,6 +184,17 @@ header a{
     top: -120px;
     left: 350px;
     filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.5));
+    animation: spin-move 8s linear infinite;
+}
+
+
+@keyframes spin-move {
+  from {
+    transform: translate(0) rotate(0deg);
+  }
+  to {
+    transform: translate(0) rotate(360deg);
+  }
 }
 /*  */
 
